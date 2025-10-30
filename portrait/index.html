@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Halloween 2025 - Portrait</title>
+    <meta name="viewport" content="initial-scale=1.0, height=device-height, width=device-width" />
+    <link rel="stylesheet" media="screen" type="text/css" href="./index.css" />
+  </head>
+
+  <body>
+    <video autoplay controls disablepictureinpicture disableremoteplayback loop muted preload="auto">
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+    <script type="text/javascript">
+      var video = window.document.getElementsByTagName('video').item(0);
+      if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      } else if (video.requestFullscreen) {
+        video.requestFullscreen();
+      }
+    </script>
+  </body>
+
+</html>
